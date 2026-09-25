@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>SIGCCI - Página Principal</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f6f9;
+      margin: 0;
+      padding: 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+    .container {
+      display: flex;
+      gap: 20px;
+    }
+    .card {
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      width: 250px;
+      text-align: center;
+      padding: 20px;
+      transition: transform 0.2s;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+    }
+    .icon {
+      font-size: 50px;
+      margin-bottom: 15px;
+      color: #4a90e2;
+    }
+    .card h3 {
+      margin: 10px 0;
+      color: #333;
+    }
+    .card p {
+      font-size: 14px;
+      color: #666;
+      margin-bottom: 20px;
+    }
+    .card a {
+      display: inline-block;
+      padding: 10px 15px;
+      background: #4a90e2;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+    .card a:hover {
+      background: #357ab8;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="card">
+      <div class="icon">⚙️</div>
+      <h3>Backoffice</h3>
+      <p>Accede al panel administrativo de SIGCCI.</p>
+      <a href="http://147.79.78.131:1340/admin">Entrar</a>
+    </div>
+    <div class="card">
+      <div class="icon">📊</div>
+      <h3>Módulo No Administrativo</h3>
+      <p>Consulta y gestiona información operativa.</p>
+      <a href="http://147.79.78.131:4000">Entrar</a>
+    </div>
+    <div class="card">
+      <div class="icon">🌐</div>
+      <h3>Web</h3>
+      <p>Visualiza el sitio web público de SIGCCI.</p>
+      <a href="http://147.79.78.131:4001">Entrar</a>
+    </div>
+  </div>
+</body>
+</html>
